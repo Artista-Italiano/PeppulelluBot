@@ -1,0 +1,42 @@
+# PeppulelluBot
+
+PeppulelluBot è un assistente live per dirette streaming su YouTube, controllato da un'intelligenza artificiale offline.
+
+## Funzionalità principali
+
+- Avvio automatico dello stream su YouTube con chiave RTMP
+- Lettura dei messaggi in chat in tempo reale
+- Risposte generate da modelli AI offline (es. Mistral, P, Mixtral)
+- Messaggi periodici con frasi filosofiche e contenuti a tema
+- Interfaccia visiva per il controllo dello stream e della chat
+
+## Requisiti minimi
+
+- Python 3.10+
+- RAM minima: 4GB (per modelli leggeri come P)
+- CPU: Dual core (funziona anche su processori lenti con Linux)
+- Sistema operativo consigliato: Linux (funziona anche su Windows)
+
+## Note sull'AI
+
+Il sistema supporta:
+- Modelli di grandi dimensioni (Mistral/Mixtral)
+- Modelli leggeri per sistemi a bassa potenza (es. P, Phi, TinyLlama)
+
+Tutti i modelli sono eseguiti in locale, senza necessità di connessione internet durante l'elaborazione delle risposte.
+
+## Autenticazione Google
+
+Per funzionare correttamente, il bot necessita di:
+- Un file `client_secret.json` per l'autenticazione OAuth2
+- Un file `token.json` generato dopo il primo avvio
+
+## Collaborazione
+
+Questo progetto è aperto alla collaborazione. Se vuoi contribuire:
+1. Clona il repository
+2. Installa le dipendenze
+3. Crea una tua branch
+4. Invia una pull request con le tue modifiche
+
+Grazie per il supporto!
