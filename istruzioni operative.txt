@@ -1,0 +1,32 @@
+
+📁 README_COLLABORATORE.txt
+
+Questo progetto contiene tutti i dati sensibili necessari per collegarsi via API a una trasmissione in diretta su YouTube, compresa la risposta automatica tramite intelligenza artificiale offline (es. Mistral, P, LLaMA, ecc.).
+
+⚠️ I file `client_secret.json` e `token.json` contengono **le credenziali dell'autore del progetto** e **non devono essere riutilizzate per altri scopi**.
+
+Tuttavia, per effettuare test **in autonomia**, è possibile **sostituire questi file con i propri**, ottenuti seguendo i seguenti passaggi:
+
+🔧 **COME EFFETTUARE TEST CON IL PROPRIO ACCOUNT**
+
+1. Accedi a https://console.cloud.google.com/ e crea un nuovo progetto.
+2. Abilita il servizio **YouTube Data API v3**.
+3. Crea credenziali **OAuth 2.0** → tipo applicazione: **Desktop App**.
+4. Scarica il file JSON e rinominalo in `client_secret.json`, sostituendo quello esistente nella cartella del progetto.
+5. Esegui da terminale:
+
+   ```
+   python auth_youtube.py
+   ```
+
+6. Dopo l'autenticazione, verrà generato automaticamente il file `token.json`.
+
+Da questo momento in poi, **potrai usare il progetto collegato al tuo canale YouTube** per testare l’intelligenza artificiale, anche senza stream attivo (ad esempio con uno **schermo nero**, solo per testare la **chat live**).
+
+💡 **Note importanti:**
+
+- L’AI risponde alla chat in tempo reale.
+- Tutto il sistema è offline e può funzionare anche su sistemi Linux leggeri.
+- È possibile sostituire l’AI principale con modelli più leggeri (es. Phi, TinyLLaMA...) per ambienti con poca RAM o CPU lenta.
+
+👨‍💻 In caso di dubbi o problemi, contattare il creatore del progetto o aprire un commento nella piattaforma di collaborazione (GitHub, Gtube, ecc.).
